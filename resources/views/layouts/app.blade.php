@@ -12,7 +12,7 @@
     </title>
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=plus-jakarta-sans:400,500,600,700" rel="stylesheet" />
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="min-h-full bg-zinc-100 font-sans text-zinc-900 antialiased">
     <header class="border-b-4 border-sky-500 bg-zinc-900 text-zinc-100">
