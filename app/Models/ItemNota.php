@@ -12,7 +12,7 @@ class ItemNota extends Model
     'codigo_sku' => 'N/A',
     'unidade_medida' => 'UN',
     'valor_icms' => 0,
-    'valor_desconto => 0,
+    'valor_desconto' => 0,
     ];
     protected $fillable = [
         'nota_fiscal_id', 'codigo_sku', 'descricao', 'quantidade',
