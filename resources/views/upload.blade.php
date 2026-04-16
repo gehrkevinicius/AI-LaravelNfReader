@@ -47,6 +47,13 @@
                 >
                     Processar
                 </button>
+                <script>
+    document.querySelector('form').addEventListener('submit', function() {
+        const btn = document.querySelector('button[type=submit]');
+        btn.disabled = true;
+        btn.textContent = 'Processando...';
+    });
+</script>
             </form>
         </div>
     </div>
