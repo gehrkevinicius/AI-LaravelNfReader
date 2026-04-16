@@ -14,11 +14,11 @@ return new class extends Migration
         Schema::create('itens_nota', function (Blueprint $table) {
             $table->id();
             $table->foreignId('nota_fiscal_id')->constrained('notas_fiscais');
-            $table->string('codigo_sku');
+            $table->string('codigo_sku') ->nullable();
             $table->string('descricao');
             $table->decimal('quantidade', 8, 3) ->nullable(); 
             $table->string('unidade_medida') ->nullable(); 
-            $table->string('ncm');
+            $table->string('ncm') ->nullable();
             $table->decimal('valor_unitario', 10, 2);
             $table->decimal('valor_icms', 10, 2) ->nullable();
             $table->decimal('valor_desconto', 10, 2) ->nullable();
